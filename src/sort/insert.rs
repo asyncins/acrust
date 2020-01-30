@@ -1,5 +1,5 @@
-/* rust
-排序算法 - 插入排序 Insert Sort
+/* Rust Programming Language
+排序算法 - 插入排序
 这种排序方法的主要逻辑为
 外循环先指定一个数，通常是第一个数
 接着在内循环中将这个外循环指定数与左侧数逐个比较，并根据比较结果将外循环指定数插入在内循环数的左边或不动
@@ -34,7 +34,6 @@ fn main() {
     println!("vectors: {:?}", vectors);
     let results = insert_sort(&mut vectors);
     println!("results: {:?}", results);
-
 }
 
 

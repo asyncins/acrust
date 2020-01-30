@@ -10,7 +10,7 @@ results: [2, 7, 9, 9, 11, 13, 20, 21, 33, 39, 50, 109]
 fn bubble_sort(vectors: &mut Vec<i32>) -> &Vec<i32>{
     // 多少个元素就比对多少轮
     for i in 0..vectors.len(){
-        // 防止越界
+        // 划定边界
         for j in 0..vectors.len()-i-1{
             // 第i位与下一位进行比较
             if vectors[j] > vectors[j+1]{
