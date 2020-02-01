@@ -22,11 +22,9 @@ fn selection_sort(vectors: &mut Vec<i32>) -> &Vec<i32>{
                 current = j;
             }
         }
-        println!("现在是第 {} 轮, 最小值: {}, vectors: {:?}", i, vectors[index], vectors);
         let middle = vectors[current];
         vectors[current] = vectors[i];
         vectors[i] = middle;
-        println!("第 {} 轮的 min_value: {}", i, vectors[current]);
     }
     vectors
 }
